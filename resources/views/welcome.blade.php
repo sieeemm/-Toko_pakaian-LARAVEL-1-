@@ -3,119 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <title>STONE ISLAND</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f3f4f6;
-        }
-        header {
-            background-color: #2563eb;
-            color: white;
-            padding: 16px;
-            text-align: center;
-            font-size: 1.25rem;
-            font-weight: bold;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        .login-button {
-            background-color: #ffffff;
-            color: #2563eb;
-            padding: 8px 16px;
-            border-radius: 4px;
-            margin-right: 16px;
-            font-weight: bold;
-        }
-        .product-card {
-            background-color: white;
-            padding: 16px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .product-card img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .buy-button {
-            margin-top: 8px;
-            background-color: #3b82f6;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 4px;
+        main {
+            flex: 1;
         }
     </style>
 </head>
-<body>
-    <header>
-        <span>ELLYSIAN SHOP</span>
-        <button class="login-button">Login</button>
+<body class="bg-gray-200">
+    <header class="bg-gray-700 text-white p-4 text-center">
+        <h1 class="text-3xl font-bold">STONE ISLAND</h1>
     </header>
-    <main class="p-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <!-- 10 Produk -->
-            <div class="product-card">
-                <img src="images/jersey.jpeg.jpeg" alt="Produk 1">
-                <h2 class="text-lg font-semibold mt-2">Nama Produk 1</h2>
-                <p class="text-gray-600">Rp 100000</p>
-                <button class="buy-button">Beli</button>
+
+    <nav class="bg-gray-600 p-3 text-center">
+        <a href="home" class="text-white px-4">HOME</a>
+        <a href="#" class="text-white px-4">TENTANG</a>
+        <a href="produk" class="text-white px-4">PRODUK</a>
+        <a href="login" class="text-white px-4">LOGIN</a>
+    </nav>
+
+    <main class="p-6">
+        <section class="bg-white shadow-md p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Selamat Datang!</h2>
+            <p>Ini adalah halaman depan website kami. Jelajahi berbagai informasi menarik dan layanan yang kami tawarkan.</p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white shadow-md p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Tentang Kami</h3>
+                <p>Kami menyediakan layanan terbaik untuk Anda dengan kualitas yang terjamin.</p>
             </div>
-            <div class="product-card">
-                <img src="images/jersey.jpeg.jpeg" alt="Produk 2">
-                <h2 class="text-lg font-semibold mt-2">Nama Produk 2</h2>
-                <p class="text-gray-600">Rp 200000</p>
-                <button class="buy-button">Beli</button>
+            <div class="bg-white shadow-md p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Layanan</h3>
+                <p>Berbagai layanan yang dapat mendukung kebutuhan Anda sehari-hari.</p>
             </div>
-            <div class="product-card">
-                <img src="images/jersey.jpeg.jpeg" alt="Produk 3">
-                <h2 class="text-lg font-semibold mt-2">Nama Produk 3</h2>
-                <p class="text-gray-600">Rp 300000</p>
-                <button class="buy-button">Beli</button>
+            <div class="bg-white shadow-md p-4 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Hubungi Kami</h3>
+                <p>Silakan hubungi kami untuk informasi lebih lanjut dan konsultasi gratis.</p>
             </div>
-            <div class="product-card">
-                <img src="images/jersey.jpeg.jpeg" alt="Produk 4">
-                <h2 class="text-lg font-semibold mt-2">Nama Produk 4</h2>
-                <p class="text-gray-600">Rp 400000</p>
-                <button class="buy-button">Beli</button>
-            </div>
-            <div class="product-card">
-                <img src="images/jersey.jpeg.jpeg" alt="Produk 5">
-                <h2 class="text-lg font-semibold mt-2">Nama Produk 5</h2>
-                <p class="text-gray-600">Rp 500000</p>
-                <button class="buy-button">Beli</button>
-            </div>
-            <div class="product-card">
-                <img src="images/jersey.jpeg.jpeg" alt="Produk 6">
-                <h2 class="text-lg font-semibold mt-2">Nama Produk 6</h2>
-                <p class="text-gray-600">Rp 600000</p>
-                <button class="buy-button">Beli</button>
-            </div>
-            <div class="product-card">
-                <img src="images/jersey.jpeg.jpeg" alt="Produk 7">
-                <h2 class="text-lg font-semibold mt-2">Nama Produk 7</h2>
-                <p class="text-gray-600">Rp 700000</p>
-                <button class="buy-button">Beli</button>
-            </div>
-            <div class="product-card">
-                <img src="images/jersey.jpeg.jpeg" alt="Produk 8">
-                <h2 class="text-lg font-semibold mt-2">Nama Produk 8</h2>
-                <p class="text-gray-600">Rp 800000</p>
-                <button class="buy-button">Beli</button>
-            </div>
-            <div class="product-card">
-                <img src="images/jersey.jpeg.jpeg" alt="Produk 9">
-                <h2 class="text-lg font-semibold mt-2">Nama Produk 9</h2>
-                <p class="text-gray-600">Rp 900000</p>
-                <button class="buy-button">Beli</button>
-            </div>
-            <div class="product-card">
-                <img src="images/jersey.jpeg.jpeg" alt="Produk 10">
-                <h2 class="text-lg font-semibold mt-2">Nama Produk 10</h2>
-                <p class="text-gray-600">Rp 1000000</p>
-                <button class="buy-button">Beli</button>
-            </div>
-        </div>
+        </section>
     </main>
+
+    <footer class="bg-gray-700 text-white p-4 text-center">
+        &copy; 2025 STONE ISLAND. LARAVEL 1.
+    </footer>
 </body>
 </html>
