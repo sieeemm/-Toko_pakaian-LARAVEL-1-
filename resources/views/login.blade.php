@@ -7,8 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="flex items-center justify-center min-h-screen bg-cover bg-center" 
-style="background-image: url('images/login.jpg');">
-  
+style="background-image:url('login.jpg');"></style>
   <div class="bg-black bg-opacity-60 p-8 rounded-lg shadow-lg w-96 text-center">
     <h2 class="text-white text-2xl font-bold mb-6">Login Form</h2>
     <form class="space-y-4">
